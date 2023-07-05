@@ -10,7 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
 
   const [searchResults, setSearchResults] = useState([]);
-  const [searchText, setSearchText] = useState('bahubali');
+  const [searchText, setSearchText] = useState('');
 
   return (
     <div>
