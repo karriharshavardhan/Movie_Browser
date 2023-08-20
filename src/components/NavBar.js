@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 const NavBar = ({searchText, setSearchText}) => {
   const navigate = useNavigate()
   const updateSearchText = (e) => {
-    navigate.('/search') //it is different in the older react version
+    navigate('/search') //it is different in the older react version
     setSearchText(e.target.value)
   }
 
