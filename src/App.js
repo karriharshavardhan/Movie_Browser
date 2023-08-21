@@ -13,12 +13,13 @@ function App() {
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    console.log(searchText, "is the search text")
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=1b57483b8b14ba0abe86259dd97b537b&language=en-US&query=${searchText}&page=1&include_adult=false`)
-      .then(response => response.json)
-      .then(data => {
-        setSearchResults(data.reults)
-      })
+    if(searchText){
+      fetch(`https://api.themoviedb.org/3/search/movie?api_key=1b57483b8b14ba0abe86259dd97b537b&language=en-US&query=${searchText}&page=1&include_adult=false`)
+        .then(response => response.json)
+        .then(data => {
+          setSearchResults(data.results)
+        })
+    }
   }, [searchText])
 
   return (
