@@ -23,10 +23,11 @@ const MovieView = () => {
             return <Hero text="Loading..."/>
         }
         if(movieDetails){
-            const posterPath = `https://image.tmdb.org/t/p/w500${movieDetails.posterPath}`
+            const posterPath = `https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`
+            const backdropUrl= `https://image.tmdb.org/t/p/w500${movieDetails.backdrop_path}`
             return (
                 <>
-                    <Hero text={movieDetails.original_title} />
+                    <Hero text={movieDetails.original_title} backdrop={backdropUrl}/>
                     <div className="container my-5">
                         <div className="col-md-3">
                             <img src={posterPath} alt="..." className="img-fluid shadow rounded"/> {/*left col*/}
