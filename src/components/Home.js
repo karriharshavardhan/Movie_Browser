@@ -1,32 +1,21 @@
 import Hero from "./Hero";
 
-const Home = () => {
-  return (
-    <>
-      <Hero text="Welcome to react 201" />
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 offset-lg-2 my-5">
-            <p className="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta
-              et enim id tincidunt. Aenean tristique lorem neque, et porttitor
-              metus condimentum eu. Pellentesque id lorem consequat felis
-              hendrerit sagittis non non erat. Suspendisse ac enim non nunc
-              mollis pulvinar nec vestibulum felis. Donec auctor sapien nec nibh
-              tincidunt, vitae vestibulum lacus commodo. Cras a elit id mauris
-              lacinia faucibus et sed mauris. Suspendisse auctor felis et elit
-              pretium cursus. Nulla cursus lectus et ex bibendum, a sagittis
-              orci imperdiet. Proin sed enim ac mauris feugiat semper. Sed
-              convallis felis eget velit fermentum, id feugiat quam elementum.
-              Curabitur vel dictum eros. Sed porttitor ante a imperdiet
-              vulputate. Fusce a neque molestie, lobortis nisl et, accumsan
-              ante.
-            </p>
-          </div>
+const Home=()=>{
+    return(
+        <>
+        <Hero text="welcome to Home page"/>
+        
+        <div className="ccontainer">
+            <div className="row">
+                <div className="col-lg-8 offset-lg-2 my-5">
+                    <p className="Lead">
+                    “Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data. Often, developers use third-party services to generate “Lorem ipsum” text, but now you can do that right in your editor. Just expand lorem or lipsum abbreviations to get the following snippet:
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </>
-  );
-};
+        </>
+        )
+}
 
 export default Home;

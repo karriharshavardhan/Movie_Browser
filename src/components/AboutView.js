@@ -1,26 +1,20 @@
 import Hero from "./Hero";
-
-const AboutView = () => {
-  return (
-    <>
-      <Hero text="About us" />
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 offset-lg-2 my-5">
-            <p className="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta
-              et enim id tincidunt. Aenean tristique lorem neque, et porttitor
-              metus condimentum eu. Pellentesque id lorem consequat felis
-              hendrerit sagittis non non erat. Suspendisse ac enim non nunc
-              mollis pulvinar nec vestibulum felis. Donec auctor sapien nec nibh
-              tincidunt, vitae vestibulum lacus commodo.
-              ante.
-            </p>
-          </div>
+const About=()=>{
+    return(
+        <>
+        <Hero text="welcome to About page"/>
+    <div className="ccontainer">
+            <div className="row">
+                <div className="col-lg-8 offset-lg-2 my-5">
+                    <p className="Lead">
+                    lorem is not just a normal snippet—it’s actually a generator. Every time you expand it, it will generate a 30-words dummy text, splitted into a few sentences.
+                    You can specify how many words should be generated right in the abbreviation. For example, lorem100 will generate a 100-words dummy text.                    
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </>
-  );
-};
+    )
+}
 
-export default AboutView;
+export default About;
