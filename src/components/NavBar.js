@@ -1,18 +1,12 @@
 import {Link, useNavigate} from 'react-router-dom';
-import SearchView from './SearchView';
 import DebounceInput from 'react-debounce-input';
-const Navbar =({searchText, setSearchText})=>{
+const Navbar =({setSearchText})=>{
   const navigate = useNavigate();
   
 
   const updateSearchText=(e)=>{
     setSearchText(e.target.value)
     navigate('/search');
-  }
-
-  function gotoSearch() {
-    
-    navigate(<SearchView/>);
   }
   
     return(
