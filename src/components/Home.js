@@ -3,7 +3,7 @@ import Hero from "./Hero";
 const Home=()=>{
     return(
         <>
-        <Hero text="Welcome to Home page"/>
+        <Hero text="Welcome to home page"/>
         
         <div className="ccontainer">
             <div className="row">
