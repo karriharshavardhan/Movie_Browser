@@ -23,7 +23,7 @@ const MovieCard=({movie})=>{
 
 const SearchView=({keyword,searchResults})=>{
     const title=`You are searching for ${keyword}`
-    const resuitsHtml = searchResults.map((obj,i)=>{
+    const resultsHtml = searchResults.map((obj,i)=>{
 
         return <MovieCard movie={obj} key={i}/>
     })
@@ -31,10 +31,10 @@ const SearchView=({keyword,searchResults})=>{
     return(
         <>
         <Hero text={title}/>
-        {resuitsHtml &&
+        {resultsHtml &&
         <div className="container">
             <div className="row">
-                {resuitsHtml}
+                {resultsHtml}
             </div>
         </div>
 }
